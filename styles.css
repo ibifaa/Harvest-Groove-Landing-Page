@@ -1,0 +1,528 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color:black;
+    background-color: #D9D9D9;
+    background-color: white;
+    font-family: 'Roboto';
+    background-image: url('/images/strawberry-field\ 1\ \(1\).png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container{
+    background-color: white;
+    margin: 5%;
+    padding: 2px;
+    border-radius: 10px;
+}
+
+.content{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+
+
+.flex{
+    display: flex;
+}
+/* header */
+header{
+    
+    padding: 10px 40px;
+    border-bottom: 1px solid #D9D9D9;
+    background-color: white;
+}
+
+header, .logo, .rightButtons, .logoNavItems{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h6{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.logoNavItems{
+    gap: 60px;
+}
+
+.navItems{
+    gap: 40px;
+    font-size: 1.3rem;
+}
+
+a{
+    text-decoration: none;
+    color:#090909
+}
+
+.navItems li{
+list-style: none;
+}
+
+
+.rightButtons a{
+color: black;
+font-size: 1.2rem;
+font-weight: 400;
+border:2px solid black;
+border-radius: 90px;
+padding: 15px 20px;
+}
+
+.arrow{
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+main{
+    background-image: url('images/strawberry-field\ 1\ \(1\).png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5% 1%;
+    /* margin-bottom: 10px; */
+    border-radius: 1.5rem;
+    /* align-items: center;
+    position: relative; */
+    /* padding-bottom: 5%; */
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* grid-template-rows: repeat(6, 1fr); */
+    position: relative;
+    /* background-color: white; */
+    /* height: 100vh; */
+    padding-bottom: 5%;
+    margin-bottom: 10px;
+}
+
+
+/* Card Section */
+.card{
+    /* width: 25%; */
+    background-color: white;
+    border-radius: 10px;
+    /* margin: 20px; */
+    position: relative;
+    border: 5px solid white;
+}
+
+.img-section img{
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius:10px;
+}
+
+.body-section{
+    border-bottom: 1px solid #D9D9D9;
+    padding-bottom: 20px;
+}
+.line{
+    width: 90%;
+    height: 4%;
+    padding: 5px;
+    background-color: #D9D9D9;
+    margin: 7px;
+}
+
+.line2{
+    width: 80%;
+}
+
+.line3{
+    width: 70%;
+}
+
+.name{
+    color: black;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.description{
+    color: #090909;
+    font-size: 10px;
+}
+
+.footer-section{
+    padding: 10px;
+    gap: 10px;
+    align-items: center;
+    justify-content: left;
+}
+
+.footer-section img{
+    width: 50px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.unions-section{
+    position: relative;
+    width: 60%;
+    bottom: 40%;
+
+}
+.union1-text{
+    position:absolute;
+    font-size: 1rem;
+    
+}
+
+.union2-text{
+   position: absolute;
+   font-size: 1rem;
+   top: 10px;
+   left:60px
+}
+
+.union1{
+    position: absolute;
+    bottom:20px;
+    left: 100px;
+}
+
+.union2{
+    position: absolute;
+    right: 80px;
+    bottom: 50px;
+}
+
+.circle{
+    background-color: green;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.union1-text{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.circle1{
+    right: 10px;
+    top: 50px;
+    position: absolute;
+}
+
+.circle2{
+    top:50px;
+    left: 10px;
+    position: absolute;
+}
+
+
+
+
+.container .box{
+    /* border-radius: 10px; */
+    /* border-bottom-left-radius: 70px; */
+    /* margin-top: 20px; */
+    position: relative;
+}
+
+
+
+/* Layout */
+.content1{
+    grid-column: 3/11;
+    height: 110px;
+    position: relative;
+    --_br: 1.5rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    
+}
+
+.hero-content{
+    background-color: white;
+    text-align: left;
+    padding-left: 20px;
+   
+ /* grid-column: 4/9; */
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 5px;
+    line-height: 1;
+    /* margin: 20px; */
+    /* padding: 20px; */
+}
+
+h1::before{
+    --_size: var(--_br);
+    content: "";
+    position: absolute;
+    width: var(--_size);
+    aspect-ratio: 1;
+    background-color: white;
+    left: -1px;
+}
+
+.content1::before{
+    --_size: var(--_br);
+    content: "";
+    position: absolute;
+    width: var(--_size);
+    aspect-ratio: 1;
+    background-image: radial-gradient(
+      circle at 100% 100%,
+      transparent var(--_size),
+      var(--_corner-color, white) calc(var(--_size) + 1px)
+    ); 
+    rotate: 90deg;
+    left: -25px;
+
+}
+
+.content1::after {
+  --_size: var(--_br);
+  content: "";
+  position: absolute;
+  width: var(--_size);
+  aspect-ratio: 1;
+  background-image: radial-gradient(
+    circle at 100% 100%,
+    transparent var(--_size),
+    var(--_corner-color, white) calc(var(--_size) + 1px)
+  );
+  rotate:-360deg;
+  top: 0;
+  right: -24px;
+}
+
+/* .content1::after {
+    --_size: var(--_br);
+    content: "";
+    position: absolute;
+    width: var(--_size);
+    aspect-ratio: 1;
+    background-image: radial-gradient(
+      circle at 100% 100%,
+      transparent var(--_size),
+      var(--_corner-color, red) calc(var(--_size) + 1px)
+    );
+    rotate:-360deg;
+    
+    right: 0;
+  } */
+
+/* content 2 */
+
+.content2{
+    --_br: 1.5rem;
+    grid-column: 5/12;
+    /* grid-row: 2; */
+    position: relative;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+.text-content{
+    background-color: white;
+    padding-left: 30px;
+    
+
+}
+.text-content p{
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    padding-right: 10px;
+}
+.text-content p::before{
+    --_size: var(--_br);
+    content: "";
+    position: absolute;
+    width: var(--_size);
+    aspect-ratio: 1;
+    background-color: white;
+    left: 0;
+    top: 0;
+}
+
+.content2::before{
+    --_size: var(--_br);
+    content: "";
+    position: absolute;
+    width: var(--_size);
+    aspect-ratio: 1;
+    background-image: radial-gradient(
+      circle at 100% 100%,
+      transparent var(--_size),
+      var(--_corner-color, white) calc(var(--_size) + 1px)
+    ); 
+    rotate: 90deg;
+    top: 0;
+    left: -24px;
+
+}
+
+.content2::after{
+    --_size: var(--_br);
+    content: "";
+    position: absolute;
+    width: var(--_size);
+    aspect-ratio: 1;
+    background-image: radial-gradient(
+      circle at 100% 100%,
+      transparent var(--_size),
+      var(--_corner-color, white) calc(var(--_size) + 1px)
+    ); 
+    rotate: 180deg;
+    top: 80%;
+    right: -14.3%;
+
+}
+ 
+ 
+
+/* Content 3 */
+
+.content3{
+    --_br: 1.5rem;
+    grid-column: 6/-1;
+    position: relative;
+    /* grid-row: 3; */
+    background-color: white;
+    position: relative;
+    height: 100px;
+    border-bottom-left-radius: 10px;
+}
+
+.content3::before{
+    --_size: var(--_br);
+    content: "";
+    position: absolute;
+    width: var(--_size);
+    aspect-ratio: 1;
+    background-image: radial-gradient(
+      circle at 100% 100%,
+      transparent var(--_size),
+      var(--_corner-color, white) calc(var(--_size) + 1px)
+    ); 
+    left: -23px;
+    rotate: 90deg;
+   
+}
+
+.content3::after{
+    --_size: var(--_br);
+    content: "";
+    position: absolute;
+    width: var(--_size);
+    aspect-ratio: 1;
+    background-image: radial-gradient(
+      circle at 100% 100%,
+      transparent var(--_size),
+      var(--_corner-color, white) calc(var(--_size) + 1px)
+    ); 
+    bottom: -24px;
+    right: 0;
+    rotate: 90deg;
+   
+}
+
+.likes-div::after{
+    --_size: var(--_br);
+    content: "";
+    position: absolute;
+    width: var(--_size);
+    aspect-ratio: 1;
+    background-image: radial-gradient(
+      circle at 100% 100%,
+      transparent var(--_size),
+      var(--_corner-color, white) calc(var(--_size) + 1px)
+    ); 
+    top: -24px;
+    right: 72px;
+    rotate: -90deg;
+   
+}
+
+.likes-div{
+    position: relative;
+ 
+}
+.image-gallery{
+ position: relative;
+ left: 10%;
+}
+.circle-img{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    
+}
+
+.img2{
+    left: 50px;
+}
+.img3{
+    left: 90px;
+}
+
+.likes-text{
+    
+    top: 15px;
+    position: absolute;
+  left: 38%;
+}
+.likes{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+.content4{
+    grid-column: 1/4;
+    grid-row: 3/5;
+    position: relative;
+    margin: 20px;
+    margin-bottom: 30%;
+}
+
+.content5{
+    grid-column: 3/4;
+    grid-row: 5;
+    position: relative;
+}
+
+.content6{
+    grid-column: 11/12;
+    grid-row: 5;
+    position: relative;
+  
+
+}
+
+.about{
+    --_br: 1.5rem;
+}
+
+.about::after{
+    --_size: var(--_br);
+    content: "";
+    position: absolute;
+    width: var(--_size);
+    aspect-ratio: 1;
+    background-image: radial-gradient(
+      circle at 100% 100%,
+      transparent var(--_size),
+      var(--_corner-color, white) calc(var(--_size) + 1px)
+    ); 
+    right: 10.7%;
+    top: -24px;
+    rotate: -90deg;
+}
