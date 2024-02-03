@@ -112,6 +112,8 @@ main{
 }
 
 
+
+
 /* Card Section */
 .card{
     /* width: 25%; */
@@ -533,4 +535,131 @@ h1::before{
     right: 10.7%;
     top: -24px;
     rotate: -90deg;
+}
+
+@media screen and (max-width:760px) {
+
+    header{
+        padding: 5px 40px;
+    }
+    .main{
+        grid-template-columns: 1fr;
+    }
+
+    .navItems{
+        display: none;
+    }
+
+    .logo h6{
+        font-size: 0.8rem;
+    }
+
+    .rightButtons a{
+       display: none;
+        }
+        
+        .arrow{
+            border: 2px solid black;
+            padding: 20px;
+            border-radius: 50%;
+        }
+
+        h1{
+            font-size: 2rem;
+        }
+        
+        .content4{
+            grid-column: 1/5;
+        }
+
+        .content5{
+            grid-column: 4/6;
+            margin-right: 20px;
+        }
+
+        .content6{
+            grid-column: 12/-1;
+            margin-left: 20px;
+        }
+
+       
+.likes-div{
+   justify-content: space-between;
+   margin-left: 0;
+ 
+}
+
+
+.likes-text{
+    left: 60%;
+ 
+}
+    
+}
+
+@media screen and (max-width:600px) {
+
+    header{
+        padding: 5px 40px;
+    }
+    .main{
+        grid-template-columns: 1fr;
+    }
+
+    .navItems{
+        display: none;
+    }
+
+    .logo h6{
+        font-size: 0.8rem;
+    }
+
+    .rightButtons a{
+       display: none;
+        }
+        
+        .arrow{
+            border: 2px solid black;
+            padding: 20px;
+            border-radius: 50%;
+        }
+
+        h1{
+            font-size: 1.5rem;
+        }
+
+        .image-gallery{
+            display: none;
+        }
+
+
+.likes-text{
+    left: 20%;
+}
+
+.about{
+    font-size: 0.7rem;
+}
+   
+.unions-section{
+    display: none;
+}
+
+.content5{
+  display: none;
+}
+
+.content6{
+   display: none;
+}
+
+.content4{
+    grid-column: 1/-1;
+    grid-row: 4/6;
+    position: relative;
+    /* width: 100%; */
+    margin: 20px;
+    margin-bottom: 30%;
+}
+    
 }
