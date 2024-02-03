@@ -8,14 +8,22 @@ body{
     background-color: #D9D9D9;
     background-color: white;
     font-family: 'Roboto';
+    /* background-image: url('/images/strawberry-field\ 1\ \(1\).png');
+    background-size: cover;
+    background-repeat: no-repeat; */
+}
+
+.fullPage{
     background-image: url('/images/strawberry-field\ 1\ \(1\).png');
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 2%;
+
 }
 
 .container{
     background-color: white;
-    margin: 5%;
+    margin: 3%;
     padding: 2px;
     border-radius: 10px;
 }
