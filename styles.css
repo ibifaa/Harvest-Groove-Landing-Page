@@ -62,8 +62,8 @@ header, .logo, .rightButtons, .logoNavItems{
 }
 
 .navItems{
-    gap: 40px;
-    font-size: 1.3rem;
+    gap: 15px;
+    font-size: 1rem;
 }
 
 a{
